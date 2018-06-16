@@ -71,15 +71,15 @@ class Client(object):
 
 if __name__ == "__main__":
     public_key = "ff20f250a7b3a414781d1abe11cd8cee"
-    secret = "fb453577d11294359058a9ae13c94713"
+    secret = "fc35e989fd22749dcd20812b81031c28"
 
-    btc_address = "1ANJ18KJiL55adwzvNhRimnQcShR4iMvCe"
+    btc_address = "396ih1whYzaH7Wx9rUwgPFjfZV2Cj9kwef"
 
     client = Client("https://api.hitbtc.com", public_key, secret)
 
     eth_btc = client.get_symbol('ETHBTC')
     address = client.get_address('ETH')     # get eth address for deposit
-
+5
     print('ETH deposit address: "%s"' % address)
 
     # transfer all deposited eths from account to trading balance
@@ -103,7 +103,7 @@ if __name__ == "__main__":
     if eth_balance >= float(eth_btc['quantityIncrement']):
         client_order_id = uuid.uuid4().hex
         orderbook = client.get_orderbook('ETHBTC')
-        # set price a little high
+        # set price a little high 
         best_price = Decimal(orderbook['bid'][0]['price']) + Decimal(eth_btc['tickSize'])
 
         print("Selling at %s" % best_price)

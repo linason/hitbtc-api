@@ -70,7 +70,7 @@ class Client(object):
 
 
 if __name__ == "__main__":
-    public_key = "ff20f250a7b3a414781d1abe11cd8cee"
+    public_key = "cf0825088324a6d2642d2dac99f4faba"
     secret = "fc35e989fd22749dcd20812b81031c28"
 
     btc_address = "396ih1whYzaH7Wx9rUwgPFjfZV2Cj9kwef"

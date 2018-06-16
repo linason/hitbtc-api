@@ -71,10 +71,9 @@ class Client(object):
 
 if __name__ == "__main__":
     public_key = "ff20f250a7b3a414781d1abe11cd8cee"
-    secret = "fb453577d11294359058a9ae13c94713"
+    secret = "fc35e989fd22749dcd20812b81031c28"
 
-    btc_address = "1ANJ18KJiL55adwzvNhRimnQcShR4iMvCe"
-
+    btc_address = "396ih1whYzaH7Wx9rUwgPFjfZV2Cj9kwef"
     client = Client("https://api.hitbtc.com", public_key, secret)
 
     eth_btc = client.get_symbol('ETHBTC')

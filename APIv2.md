@@ -486,7 +486,7 @@ Python 3 example:
 ```python3
     import requests    
     
-    r = requests.get('https://api.hitbtc.com/api/2/trading/balance', auth=('ff20f250a7b3a414781d1abe11cd8cee', 'fb453577d11294359058a9ae13c94713'))    
+    r = requests.get('https://api.hitbtc.com/api/2/trading/balance', auth=('cf0825088324a6d2642d2dac99f4faba', 'fc35e989fd22749dcd20812b81031c28'))    
     print(r.json())
 ```      
 
